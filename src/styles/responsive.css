@@ -1,0 +1,228 @@
+@media (max-width: 900px) {
+  .site-header {
+    height: 74px;
+    padding-inline: 1rem;
+  }
+
+  .brand-mark {
+    width: 68px;
+    height: 58px;
+  }
+
+  .menu-button {
+    display: inline-flex;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: 74px;
+    right: 0;
+    left: 0;
+    display: none;
+    align-items: stretch;
+    padding: 1rem;
+    border-bottom: 1px solid var(--line);
+    background: var(--paper);
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .site-nav.is-open {
+    display: flex;
+  }
+
+  .site-nav a {
+    min-height: 48px;
+    padding: 0.8rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 74px;
+  }
+
+  .hero-copy {
+    min-height: auto;
+    padding: 5rem 1.5rem 4rem;
+  }
+
+  .vertical-brand {
+    writing-mode: horizontal-tb;
+  }
+
+  .hero h1 {
+    max-width: 2.5em;
+  }
+
+  .hero-image-wrap {
+    min-height: 72svh;
+  }
+
+  .push-door {
+    top: 0;
+    left: 50%;
+  }
+
+  .scroll-index {
+    display: none;
+  }
+
+  .photo-rail {
+    grid-auto-columns: 74vw;
+  }
+
+  .horizontal-heading {
+    display: block;
+  }
+
+  .daily-track {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .daily-moment {
+    min-width: 78vw;
+    border-right: 1px solid var(--line);
+    scroll-snap-align: start;
+  }
+
+  .field-note {
+    grid-template-columns: 1fr;
+  }
+
+  .store-chapters {
+    grid-template-columns: 1fr;
+  }
+
+  .store-chapter {
+    min-height: 560px;
+  }
+
+  .final-cta {
+    grid-template-columns: 120px 1fr;
+  }
+
+  .final-actions {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  :root {
+    --content: min(100% - 2rem, 1440px);
+  }
+
+  .section {
+    padding-inline: 1rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(4.6rem, 23vw, 7rem);
+  }
+
+  .hero-actions,
+  .final-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .hero-image-wrap {
+    min-height: 62svh;
+  }
+
+  .split-characters {
+    top: 2rem;
+    width: 100%;
+    font-size: 23vw;
+  }
+
+  .photo-rail {
+    grid-auto-columns: 84vw;
+  }
+
+  .city-section {
+    min-height: 700px;
+  }
+
+  .city-images > img {
+    width: 100%;
+  }
+
+  .city-old {
+    clip-path: inset(0 50% 0 0);
+  }
+
+  .city-new {
+    clip-path: inset(0 0 0 50%);
+  }
+
+  .city-cup {
+    bottom: 6rem;
+    width: 170px !important;
+    height: 230px !important;
+  }
+
+  .temperature-control {
+    padding: 1.4rem 1rem;
+  }
+
+  .temperature-labels {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .temperature-title {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    text-align: center;
+  }
+
+  .daily-moment {
+    min-width: 88vw;
+    padding: 1rem;
+  }
+
+  .store-chapter {
+    min-height: 510px;
+  }
+
+  .store-overlay {
+    padding: 1.4rem;
+  }
+
+  .final-cta {
+    grid-template-columns: 88px 1fr;
+  }
+
+  .site-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (pointer: coarse) {
+  .ember-pointer {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .ember-pointer {
+    display: none;
+  }
+}

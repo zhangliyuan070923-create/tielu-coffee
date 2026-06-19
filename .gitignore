@@ -1,0 +1,15 @@
+node_modules/
+dist/
+coverage/
+*.log
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
+.DS_Store
+
+# Local delivery and internal planning files
+docs/superpowers/
+design-qa.md
+启动方式.md
+验证记录.md
+铁炉咖啡网站_交付索引_*.md
